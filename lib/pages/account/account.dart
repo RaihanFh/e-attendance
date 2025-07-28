@@ -347,7 +347,7 @@ class _AccountState extends State<Account> {
       if (response.statusCode == 200) {
         List<dynamic> data = json.decode(response.body)['jadwal_shift'];
         List<dynamic> userFilteredData = data.where((e) => e['id_user'] == user['id'].toString()).toList();
-        List<dynamic> filteredData = userFilteredData.where((e) =>DateTime.parse(e['tanggal']).isAfter(period['start']) &&DateTime.parse(e['tanggal']).isBefore(period['end'])).toList();
+        List<dynamic> filteredData = userFilteredData.where((e) =>DateTime.parse(e['tanggal']).isAfter(period['start'].subtract(Duration(seconds: 1)) ) &&DateTime.parse(e['tanggal']).isBefore(period['end'].add(Duration(hours: 23, minutes: 59)))).toList();
         return filteredData;
       } else {
         print('Server responded with status: ${response.statusCode}');
