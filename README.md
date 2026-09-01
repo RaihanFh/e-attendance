@@ -4,9 +4,9 @@ A Flutter-based employee attendance and task management application for Lakeside
 
 The application allows employees to view their work schedules, clock in and out based on their physical location, manage assigned tasks, and review attendance information. Managers have additional functionality for assigning tasks to employees.
 
-##✨ Features
+## ✨ Features
 
-###🔐 Authentication
+### 🔐 Authentication
 
 Login using:
 - Username and password
@@ -15,7 +15,7 @@ Login using:
 - Automatic navigation to the home page when an authenticated session exists.
 - Logout functionality.
 
-###🏠 Home & Attendance
+### 🏠 Home & Attendance
 
 - Displays the logged-in employee's information.
 - Shows the employee's schedule for the current day.
@@ -34,7 +34,7 @@ Attendance status tracking, including:
 - Overtime
 - Didn't attend
 
-###✅ Task Management
+### ✅ Task Management
 
 Employees can:
 - View assigned tasks.
@@ -49,14 +49,14 @@ Managers can additionally:
 - Remove existing tasks.
 - Manage task status.
 
-###👤 Account & Attendance Summary
+### 👤 Account & Attendance Summary
 
 - Displays employee information.
 - Shows attendance statistics for the current period.
 - Provides attendance history.
 - Supports logout.
 
-###💾 Local Data
+### 💾 Local Data
 
 - The application uses Hive for local persistence.
 Local storage is used for:
